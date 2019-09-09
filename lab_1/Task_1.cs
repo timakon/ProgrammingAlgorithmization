@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace task_1
+namespace lab_1
 {
-    internal class Program
+    internal class Task_1
     {
-        public static void Main(string[] args)
+        public static void task_1(string[] args)
         {
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("Номер №1");
