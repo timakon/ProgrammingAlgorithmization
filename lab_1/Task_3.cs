@@ -11,30 +11,24 @@ namespace lab_1
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("Номер №1");
 
-            int i1 = 0;
+            int i1 = 1;
             double a1 = 0.1, b1 = 1, h1 = 0.1, s1 = 0, y1;
             for (double x1 = a1; x1 <= b1; x1 += h1)
             {
-                double j = 1;
-                for (int k = 2; k <= 2 * i1; k += 1)
+                double j = 1, s1_i1 = 0, z;
+                for (i1 = 1; Math.Abs(Math.Pow(-1, i1) * Math.Pow(x1, 2 * i1) / j) >= e; i1++)
                 {
-                    j *= k;
+                    int k = 0;
+                    for (j = 1; k <= 2 * i1; ++k)
+                    {
+                        j *= i1;
+                    }
+                    s1_i1 += Math.Abs(Math.Pow(-1, i1) * Math.Pow(x1, 2 * i1) / j);
                 }
 
-                if (Math.Abs(Math.Pow(-1, i1) * Math.Pow(x1, 2 * i1) / j) < e)
-                {
-                    Console.WriteLine(Math.Abs(Math.Pow(-1, i1) * Math.Pow(x1, 2 * i1) / j));
-                    s1 += Math.Abs(Math.Pow(-1, i1) * Math.Pow(x1, 2 * i1) / j);
-                    break;
-                }
-                else
-                {
-                    y1 = Math.Cos(x1);
-                    Console.WriteLine("x = {0} y = {1}", x1, y1);
-                    s1 += Math.Abs(Math.Pow(-1, i1) * Math.Pow(x1, 2 * i1) / j);
-                }
-
-                i1++;
+                s1 += s1_i1;
+                y1 = Math.Cos(x1);
+                Console.WriteLine("x = {0}  s = {1}  y = {2}",x1,s1_i1,y1);
             }
 
             Console.WriteLine("Ответ: " + s1);
@@ -53,10 +47,9 @@ namespace lab_1
                 }
 
                 s2 += s2_i2;
-                y2 = x2 * Math.Sin(Math.PI / 4) / (1 - 2 * x2 * Math.Cos(Math.PI / 4) + x2 + x2);
-                Console.WriteLine("x = {0} y = {1}",x2,y2);
-//                Console.WriteLine("x = {0}  s = {1}  y = {2}",x2,s2_i2,y2);
-                
+                y2 = x2 * Math.Sin(Math.PI / 4) / (1 - 2 * x2 * Math.Cos(Math.PI / 4) + x2 * x2);
+                Console.WriteLine("x = {0} s = {1} y = {2}",x2, s2_i2,y2);
+
             }
             Console.WriteLine("Ответ: " + s2);
             
@@ -76,7 +69,7 @@ namespace lab_1
 
                 s3 += s3_i3;
                 y3 = Math.Pow(Math.E, Math.Cos(x3)) * Math.Cos(Math.Sin(x3));
-                Console.WriteLine("x = {0} y = {1}",x3,y3);
+                Console.WriteLine("x = {0} s = {1} y = {2}",x3, s3_i3 ,y3);
             }
             Console.WriteLine("Ответ: " + s3);
 

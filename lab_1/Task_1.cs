@@ -15,10 +15,10 @@ namespace lab_1
                     {
                         s1 += 3;
                     }
-                    
+
                     Console.WriteLine("Ответ: " + s1);
-            
-            Console.WriteLine("--------------------------------------------");
+
+                    Console.WriteLine("--------------------------------------------");
             Console.WriteLine("Номер №2");
                     Console.WriteLine("Вычислить s2 = 1 + 1/2 + 1/3 + 1/4 + … + 1/10");
 
