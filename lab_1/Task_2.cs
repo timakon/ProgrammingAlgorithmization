@@ -4,7 +4,7 @@ namespace lab_1
 {
     internal class Task_2
     {
-        public static void Main(string[] arg)
+        public static void Main2(string[] arg)
         {
             Console.WriteLine("--------------------------------------------");
             Console.WriteLine("Номер №1");

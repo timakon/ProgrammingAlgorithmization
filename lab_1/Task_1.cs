@@ -3,7 +3,7 @@
 namespace lab_1
 {
     internal class Task_1
-    {
+    { 
         public static void task_1(string[] args)
         {
             Console.WriteLine("--------------------------------------------");
