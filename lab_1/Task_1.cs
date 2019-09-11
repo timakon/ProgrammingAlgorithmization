@@ -37,7 +37,7 @@ namespace lab_1
                     double s3 = 0;
                     for (float i = 2; i < 113; i += 2)
                     {
-                        s3 = i / (i + 1);
+                        s3 += i / (i + 1);
                     }
 
                     Console.WriteLine("Ответ: " + s3);
